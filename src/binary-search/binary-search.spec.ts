@@ -1,5 +1,3 @@
-import assert from "node:assert";
-import test, { describe } from "node:test";
 import { binarySearch } from "./binary-search";
 
 describe("Binary Search", () => {
@@ -11,9 +9,9 @@ describe("Binary Search", () => {
     const result3 = binarySearch(numbers, 5);
     const result4 = binarySearch(numbers, 85);
 
-    assert.strictEqual(result1, 1);
-    assert.strictEqual(result2, undefined);
-    assert.strictEqual(result3, 2);
-    assert.strictEqual(result4, 10);
+    expect(result1).toBe(1);
+    expect(result2).toBe(undefined);
+    expect(result3).toBe(2);
+    expect(result4).toBe(10);
   });
 });
