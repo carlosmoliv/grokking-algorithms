@@ -2,12 +2,10 @@ export const binarySearch = (
   list: number[],
   item: number
 ): number | undefined => {
-  // Starting
   // Low and high keep track of which part of the list will be search in.
   let low = 0;
   let high = list.length - 1;
 
-  // While
   while (low <= high) {
     // Check the middle element each time
     const mid = Math.round(low + high / 2);
