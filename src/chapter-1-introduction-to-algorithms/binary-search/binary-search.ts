@@ -1,6 +1,6 @@
 export const binarySearch = (
   list: number[],
-  item: number
+  target: number
 ): number | undefined => {
   // Low and high keep track of which part of the list will be search in.
   let low = 0;
@@ -11,9 +11,9 @@ export const binarySearch = (
     const mid = Math.round(low + high / 2);
     const guess = list[mid];
 
-    if (guess === item) {
+    if (guess === target) {
       return mid;
-    } else if (guess > item) {
+    } else if (guess > target) {
       // If the guess is too high, high is update accordingly
       high = mid - 1;
     } else {
