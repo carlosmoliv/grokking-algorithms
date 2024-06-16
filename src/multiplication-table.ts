@@ -1,11 +1,10 @@
 // Time complexity is O(n^2)
 const createMultiplicationTable = (numbers: number[]) => {
-  const multiplicationTable: number[][] = [];
+  let multiplicationTable: number[][] = [];
   for (let i = 0; i < numbers.length; i++) {
-    const row = [];
+    let row = [];
     for (let j = 0; j < numbers.length; j++) {
-      const current = numbers[i] * numbers[j];
-      row.push(current);
+      row.push(numbers[i] * numbers[j]);
     }
     multiplicationTable.push(row);
   }

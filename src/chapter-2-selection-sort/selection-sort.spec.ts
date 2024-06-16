@@ -1,7 +1,7 @@
 import { selectionSort } from "./selection-sort";
 
 describe("Selection Sort", () => {
-  test("Find the smallest element in an array", () => {
+  test("Sort an Array using a simple Selection Sort Algorithm", () => {
     const numbers = [5, 3, 6, 2, 10];
 
     const result = selectionSort(numbers);

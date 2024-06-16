@@ -1,7 +1,7 @@
-import { binarySearch } from "./binary-search";
+import { binarySearch } from './binary-search';
 
-describe("Binary Search", () => {
-  test("Return the index of the guessed number or undefined if not found", () => {
+describe('Binary Search', () => {
+  test('Return the index of the guessed number or undefined if not found', () => {
     const numbers = [1, 3, 5, 7, 9, 13, 19, 45, 78, 80, 85, 87, 90];
 
     const result1 = binarySearch(numbers, 3);
